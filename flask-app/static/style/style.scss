@@ -1,0 +1,33 @@
+%dimension {
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body {
+    @extend %dimension;
+}
+
+#block {
+    @extend %dimension;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#text-block {
+    display: grid;
+    justify-content: center;
+    align-content: center
+}
+
+#text {
+    font-size: 5em;
+}
+
+#button-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+    justify-content: center;
+    align-content: start
+}
