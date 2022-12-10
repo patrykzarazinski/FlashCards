@@ -8,6 +8,8 @@ body {
     @extend %dimension;
 }
 
+//index.html
+
 #block {
     @extend %dimension;
     display: grid;
@@ -30,4 +32,38 @@ body {
     grid-gap: 2em;
     justify-content: center;
     align-content: start
+}
+
+//action.html
+
+#main {
+    @extend %dimension;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#riddle {
+    font-size: 2em;
+    margin: 1em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form>* {
+    margin: 10px;
+}
+
+#user-input {
+    text-align: center;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2px;
 }

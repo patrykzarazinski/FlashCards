@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+{%block title%}Learning{%endblock%}
+{%block body%}
+<div id="main">
+    <span id="riddle">uczyć się</span>
+    <form id="form" action="/action" method="get">
+        <input id="user-input" name="user-input" type="text" autocomplete="off" autofocus>
+        <div id="buttons">
+            <input class="btn btn-info" name="check" type="submit" value="check" formmethod="post">
+            <input class="btn btn-info" name="next" type="submit" value="next">
+        </div>
+    </form>
+</div>
+{%endblock%}
