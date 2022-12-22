@@ -2,3 +2,5 @@ venv
 *.css
 __pycache__
 activate.sh
+.env
+db.sqlite3
